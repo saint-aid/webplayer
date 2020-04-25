@@ -178,3 +178,96 @@ footer p {
 }
 
 
+.popup {
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    height: 400px;
+    color: #666;
+    background-color: #fff;
+    border-radius: 25px;
+    z-index: 10000;
+    border: 3px solid #55aaea;
+    display: none;
+    text-align: center;
+    /* font-family: "맑은 고딕", "malgun gothic", 돋움, dotum, sans-serif; */
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+    display: none;
+}
+.popup .inner {
+    position: relative;
+}
+.popup .close {
+    position: absolute;
+    text-decoration: none;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    color: inherit;
+    top: 8px;
+    right: 20px;
+    color: #55aaea;
+    cursor: pointer;
+}
+.popup legend {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+.popup form {
+    padding: 30px 50px 0;
+    line-height: 50px;
+    }
+.popup label { width: 80px; display: inline-block; }
+.popup input {
+    height: 35px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 400px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+.popup input[type=text] {
+    border: 1px solid #cacaca;
+}
+.popup .ok {
+    width: 200px;
+    display: block;
+    background-color: #3880f7;
+    margin: auto;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.popup .icon {
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding-top: 24px;
+    }
+.popup .icon img{ width: 100%;}
+
+#dim {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    display: none;
+    z-index: 9999;
+}
