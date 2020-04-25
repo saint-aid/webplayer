@@ -21,7 +21,7 @@ header .toggler { margin-top: 35px; position: relative; float: left; width: 50px
 .toggler > span span:nth-child(3) { width: 60%; }
 .toggler > span span { display: block; height: 2px; width: 100%; background-color: #fff; }
 .toggler:hover { width: 45px; }
-header .logo { width: 260px; margin: auto; }
+header .logo { width: 260px; margin: auto; font-size: 61px; font-weight: 600; color: #FFF; }
 header .logo a { display: inline-block; margin-top: 8px; }
 header .search {
     overflow: hidden;
