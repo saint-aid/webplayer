@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevermind</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+    $(function(){
+        $('nav .file').click(function(){ //팝업열림
+            $('#dim').show();
+            $('.popup').show();
+        });
+
+        $('.popup .close').click(function(){//팝업닫힘
+            $('#dim').hide();
+            $('.popup').hide();
+        });
+    });
+    </script>
+</head>
+
+</html>

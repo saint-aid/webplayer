@@ -1,4 +1,4 @@
 package com.nevermind.webplayer.service;
 
-public interface WebplayerService {
+public interface VideosService {
 }

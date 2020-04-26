@@ -1,27 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://wwww.thymeleaf.org">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nevermind</title>
-    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    $(function(){
-        $('nav .file').click(function(){
-            $('#dim').show();
-		    $('.popup').show();
-        });
-
-        $('.popup .close').click(function(){
-            $('#dim').hide();
-		    $('.popup').hide();
-        });
-    });
-</script>
-</head>
+<head th:include="/layout/head :: head"></head>
 <body>
     <div class="wrap">
         <header>
@@ -133,10 +113,28 @@
                     </ul>
                 </div>
             </section>
-            <footer th:include="footer :: footer"></footer>
+            <footer th:include="/layout/footer :: footer"></footer>
         </div>
+        <!--팝업관련-->
         <div id="dim"></div>
-        <div th:include="popup :: popup"></div>
+        <div class="popup">
+            <div class="inner">
+                <span class="close">×</span>
+                <span class="icon"><img src="/images/uploadIcon.png" alt=""></span>
+                <form>
+                    <fieldset>
+                        <legend>동영상 업로드</legend>
+                        <div class="input_row">
+                            <label>제목 </label><input type="text">
+                        </div>
+                        <div class="input_row">
+                            <label>파일첨부 </label><input type="file">
+                        </div>
+                        <a href="#" class="ok">확인</a>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
