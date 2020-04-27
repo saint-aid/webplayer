@@ -17,7 +17,15 @@ public class Videos {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private Long hits;
+
+    private Long likes;
+
     private String title;
+
+    private String description;
+
+    private String fileName;
 
     private String path;
 
@@ -27,4 +35,5 @@ public class Videos {
         this.title = title;
         this.path = path;
     }
+
 }
